@@ -273,6 +273,7 @@ body {
 .slider .img-right {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 4px;
 }
 .slider .img-right img {
   display: block;
@@ -399,6 +400,7 @@ body {
 .tiki-banner .banner-img {
   height: 160px;
   border-radius: 8px;
+  margin: 0;
 }
 .tiki-banner .banner-img img {
   display: block;
