@@ -1,0 +1,277 @@
+.section-header {
+  position: relative;
+  background-color: rgb(26, 148, 255);
+  height: 104px;
+  z-index: 9999; // nhằm cho biết section này luôn hiển thị trên cùng
+  .container {
+    width: 1200px;
+    margin: 0 auto; //này để canh giữa nha
+    .header {
+      display: flex; //cho các khối nằm ngang
+      .left-header {
+        display: flex;
+        align-items: center; // canh giữa nội dung theo chiều dọc
+        justify-content: flex-end; // nội dung hiển thị từ bên trái
+        height: 70px;
+        width: 100%;
+        li {
+          display: block;
+          margin: unset; //bỏ giá trị margin
+          margin-right: 60px;
+          &:first-child {
+            a {
+              display: block;
+              width: 60px;
+              height: 40px;
+            }
+          }
+          &:nth-child(2) {
+            margin-right: 30px;
+            &::before {
+              content: "";
+              display: inline-block;
+              vertical-align: middle;
+              height: 32px;
+              width: 32px;
+              background-image: url("https://salt.tikicdn.com/ts/upload/96/d1/77/e499ea39b0773a337d2217ad473fcb97.png");
+              background-repeat: no-repeat;
+              background-size: cover; //giữ độ phân giải của hình, phần nào nằm ngoài phạm vi sẽ bị che
+              cursor: pointer; //đưa con trỏ về hình dạng bàn tay
+            }
+            a {
+              display: inline-block;
+              vertical-align: middle;
+              width: 75px;
+            }
+          }
+          &:nth-child(3) {
+            flex: 3;
+            display: flex;
+            height: 40px;
+            margin-right: 0;
+            input {
+              display: block;
+              width: 100%;
+            }
+            .btn-search {
+              a {
+                display: block;
+                background: rgb(13, 92, 182);
+                height: 100%;
+                padding: 0 20px;
+                line-height: 40px;
+              }
+            }
+            
+          }
+          img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+          a {
+            display: block;
+            color: white;
+            margin: unset;
+          }
+        }
+      }
+      .right-header { 
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 300px;
+        li {
+          position: relative; //khai báo vị trí xác định (vị trí hiện tại)
+          flex: 1 50%;
+          a {
+            display: block;
+            color: white;
+            margin: unset;
+            text-align: right;
+          }
+          &:nth-child(1) {
+            &::after {
+              content: "";
+              display: block;
+              position: absolute; //vị trí xác định dựa vào vị trí đặt relative
+              top: 50%;
+              left: 15px;
+              transform: translate(0, -50%); //dịch từ dưới lên 50%(chiều cao phần tử)
+              height: 32px;
+              width: 32px;
+              background-image: url("https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+          &:nth-child(2) {
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 15px;
+              transform: translate(0, -50%);
+              height: 32px;
+              width: 32px;
+              background-image: url("https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        
+      }
+
+    }
+    .header-under {
+      width: 100%;
+      height: 34px;
+      .block-notifi {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        li {
+          margin: unset;
+          height: 100%;
+          a {
+            color: white;
+            white-space: nowrap; //không cho ký tự bị rơi xuống 
+          }
+          &:first-child {
+            a {
+              display: block;
+              color: white;
+              height: 12px;
+              width: 83px;
+              img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          .child-select {
+            display: flex;
+            justify-content: flex-start; //nội dung xuất hiện từ vị trí đầu tiên - từ trái sang phải
+            height: 100%;
+            li {
+              height: 100%;
+              &:not(:last-child) {
+                margin-right: 20px;
+              }
+              a {
+                display: block;
+                height: 100%;
+                width: 100%;
+              }
+              &:nth-child(2) {
+                padding: 0;
+                flex: unset;
+              }
+              &:nth-child(3) {
+                background-color: transparent; //màu trong suốt
+                padding: 0;
+                a {
+                  background-color: transparent;
+                  padding: 0;
+                  &::after {
+                    content: "";
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+          &:nth-child(2) {
+            flex: 1 100%;
+            padding-left: 174px;
+          }       
+          &:nth-child(3) {
+            a {
+              display: block;
+              position: relative;
+              height: 22px;
+              line-height: 22px;
+              padding: 0 10px 0 30px;
+              border-radius: 20px;
+              background-color: rgba(255, 255, 255, 0.25);
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translate(0, -50%);
+                height: 12px;
+                width: 12px;
+                background-image: url("https://frontend.tikicdn.com/_desktop-next/static/img/icon-seller.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+            }
+            
+          } 
+        }
+      }
+    }
+  }
+}
+
+
+.slider {
+  width: 1240px;
+  margin-top: 20px;
+  .slider-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 824px;
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+    .slick-next {
+      right: 0;
+      height: 56px;
+      width: 32px;
+      background-image: url("https://salt.tikicdn.com/ts/upload/6b/59/c2/b61db5f1c32cfdc6d75e59d4fac2dbe8.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+      &::before {
+        content: "";
+        display: none;
+      }
+    }
+    .slick-prev {
+      left: 0;
+      height: 56px;
+      width: 32px;
+      background-image: url("https://salt.tikicdn.com/ts/upload/6b/59/c2/b61db5f1c32cfdc6d75e59d4fac2dbe8.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform-origin: top;
+      transform: rotate(180deg) translate(0, -50%);
+      z-index: 2;
+      &::before {
+        content: "";
+        display: none;
+      }
+    }
+  }
+  .img-right {
+    display: inline-block;
+    vertical-align: middle;
+    img {
+      display: block;
+      width: 408px;
+      object-fit: cover;
+    }
+  }
+}

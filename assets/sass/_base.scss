@@ -1,0 +1,23 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+// *::after {
+//   content: "";
+//   display: block;
+//   clear: both;
+// }
+// tìm hiểu về clear fix
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

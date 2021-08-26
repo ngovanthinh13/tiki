@@ -1,0 +1,279 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-header {
+  position: relative;
+  background-color: #1a94ff;
+  height: 104px;
+  z-index: 9999;
+}
+.section-header .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section-header .container .header {
+  display: flex;
+}
+.section-header .container .header .left-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70px;
+  width: 100%;
+}
+.section-header .container .header .left-header li {
+  display: block;
+  margin: unset;
+  margin-right: 60px;
+}
+.section-header .container .header .left-header li:first-child a {
+  display: block;
+  width: 60px;
+  height: 40px;
+}
+.section-header .container .header .left-header li:nth-child(2) {
+  margin-right: 30px;
+}
+.section-header .container .header .left-header li:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  width: 32px;
+  background-image: url("https://salt.tikicdn.com/ts/upload/96/d1/77/e499ea39b0773a337d2217ad473fcb97.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.section-header .container .header .left-header li:nth-child(2) a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75px;
+}
+.section-header .container .header .left-header li:nth-child(3) {
+  flex: 3;
+  display: flex;
+  height: 40px;
+  margin-right: 0;
+}
+.section-header .container .header .left-header li:nth-child(3) input {
+  display: block;
+  width: 100%;
+}
+.section-header .container .header .left-header li:nth-child(3) .btn-search a {
+  display: block;
+  background: #0d5cb6;
+  height: 100%;
+  padding: 0 20px;
+  line-height: 40px;
+}
+.section-header .container .header .left-header li img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.section-header .container .header .left-header li a {
+  display: block;
+  color: white;
+  margin: unset;
+}
+.section-header .container .header .right-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 300px;
+}
+.section-header .container .header .right-header li {
+  position: relative;
+  flex: 1 50%;
+}
+.section-header .container .header .right-header li a {
+  display: block;
+  color: white;
+  margin: unset;
+  text-align: right;
+}
+.section-header .container .header .right-header li:nth-child(1)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+  height: 32px;
+  width: 32px;
+  background-image: url("https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-header .container .header .right-header li:nth-child(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+  height: 32px;
+  width: 32px;
+  background-image: url("https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-header .container .header-under {
+  width: 100%;
+  height: 34px;
+}
+.section-header .container .header-under .block-notifi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.section-header .container .header-under .block-notifi li {
+  margin: unset;
+  height: 100%;
+}
+.section-header .container .header-under .block-notifi li a {
+  color: white;
+  white-space: nowrap;
+}
+.section-header .container .header-under .block-notifi li:first-child a {
+  display: block;
+  color: white;
+  height: 12px;
+  width: 83px;
+}
+.section-header .container .header-under .block-notifi li:first-child a img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.section-header .container .header-under .block-notifi li .child-select {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+.section-header .container .header-under .block-notifi li .child-select li {
+  height: 100%;
+}
+.section-header .container .header-under .block-notifi li .child-select li:not(:last-child) {
+  margin-right: 20px;
+}
+.section-header .container .header-under .block-notifi li .child-select li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.section-header .container .header-under .block-notifi li .child-select li:nth-child(2) {
+  padding: 0;
+  flex: unset;
+}
+.section-header .container .header-under .block-notifi li .child-select li:nth-child(3) {
+  background-color: transparent;
+  padding: 0;
+}
+.section-header .container .header-under .block-notifi li .child-select li:nth-child(3) a {
+  background-color: transparent;
+  padding: 0;
+}
+.section-header .container .header-under .block-notifi li .child-select li:nth-child(3) a::after {
+  content: "";
+  display: none;
+}
+.section-header .container .header-under .block-notifi li:nth-child(2) {
+  flex: 1 100%;
+  padding-left: 174px;
+}
+.section-header .container .header-under .block-notifi li:nth-child(3) a {
+  display: block;
+  position: relative;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 10px 0 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.section-header .container .header-under .block-notifi li:nth-child(3) a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+  height: 12px;
+  width: 12px;
+  background-image: url("https://frontend.tikicdn.com/_desktop-next/static/img/icon-seller.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider {
+  width: 1240px;
+  margin-top: 20px;
+}
+.slider .slider-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 824px;
+}
+.slider .slider-img img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .slider-img .slick-next {
+  right: 0;
+  height: 56px;
+  width: 32px;
+  background-image: url("https://salt.tikicdn.com/ts/upload/6b/59/c2/b61db5f1c32cfdc6d75e59d4fac2dbe8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+.slider .slider-img .slick-next::before {
+  content: "";
+  display: none;
+}
+.slider .slider-img .slick-prev {
+  left: 0;
+  height: 56px;
+  width: 32px;
+  background-image: url("https://salt.tikicdn.com/ts/upload/6b/59/c2/b61db5f1c32cfdc6d75e59d4fac2dbe8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-origin: top;
+  transform: rotate(180deg) translate(0, -50%);
+  z-index: 2;
+}
+.slider .slider-img .slick-prev::before {
+  content: "";
+  display: none;
+}
+.slider .img-right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.slider .img-right img {
+  display: block;
+  width: 408px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
