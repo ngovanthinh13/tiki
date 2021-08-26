@@ -15,6 +15,10 @@ a {
   color: black;
 }
 
+body {
+  background-color: #efefef;
+}
+
 .section-header {
   position: relative;
   background-color: #1a94ff;
@@ -273,6 +277,133 @@ a {
 .slider .img-right img {
   display: block;
   width: 408px;
+  object-fit: cover;
+}
+
+.section-hot-sale {
+  width: 1240px;
+  margin: 0 auto;
+  background-color: white;
+}
+.section-hot-sale .hot-del-title {
+  height: 64px;
+  padding: 16px;
+}
+.section-hot-sale .hot-del-title .img-del {
+  display: inline-block;
+  vertical-align: middle;
+}
+.section-hot-sale .hot-del-title .count-down {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  padding-right: 28px;
+  position: relative;
+}
+.section-hot-sale .hot-del-title .count-down span {
+  display: inline-block;
+  background-color: red;
+  padding: 3px;
+  color: white;
+  border-radius: 4px;
+}
+.section-hot-sale .hot-del-title .count-down::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  background-image: url("https://salt.tikicdn.com/ts/upload/93/23/bf/1a8d8d0978740faf58eba5f419507de3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section-hot-sale .hot-del-title::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.section-hot-sale .hot-del-main {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 1200px;
+  justify-content: space-around;
+}
+.section-hot-sale .hot-del-main .del-main-block {
+  text-align: center;
+}
+.section-hot-sale .hot-del-main .del-main-block .img-del-main {
+  height: 200px;
+  width: 200px;
+}
+.section-hot-sale .hot-del-main .del-main-block .img-del-main img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.section-hot-sale .hot-del-main .del-main-block .img-price {
+  margin: 12px 0 8px;
+}
+.section-hot-sale .hot-del-main .del-main-block .sall {
+  position: relative;
+  width: 70%;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  color: white;
+  background-color: #ffaaaf;
+}
+.section-hot-sale .hot-del-main .del-main-block .sall span {
+  position: relative;
+  z-index: 2;
+}
+.section-hot-sale .hot-del-main .del-main-block .sall::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 40%;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #ff424e;
+  z-index: 1;
+}
+.section-hot-sale .hot-del-main .del-main-block .sall::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  bottom: 5px;
+  left: 0;
+  background-image: url("https://frontend.tikicdn.com/_desktop-next/static/img/fire_icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.tiki-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1240px;
+  margin: 20px auto;
+}
+.tiki-banner .banner-img {
+  height: 160px;
+  border-radius: 8px;
+}
+.tiki-banner .banner-img img {
+  display: block;
+  height: 100%;
+  border-radius: 8px;
   object-fit: cover;
 }
 
